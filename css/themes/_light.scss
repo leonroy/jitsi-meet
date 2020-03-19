@@ -40,7 +40,7 @@ $overlayButtonBg: #0074E0;
 /**
 * Color variables
 **/
-$defaultBackground: #474747;
+$defaultBackground: #F7F8F9;
 $filmstripOnlyOverlayBg: #000;
 $reloadProgressBarBg: #0074E0;
 
@@ -48,9 +48,9 @@ $reloadProgressBarBg: #0074E0;
  * Dialog colors
  **/
 $auiDialogColor: #eceef1;
-$auiDialogBg: #253858;
-$auiDialogContentBg: #344563;
-$auiBorderColor: #253858;
+$auiDialogBg: #fff;
+$auiDialogContentBg: #fff;
+$auiBorderColor: #fff;
 $dialogTitleFontWeight: 400;
 $dialogErrorText: #344563;
 
@@ -80,11 +80,11 @@ $errorColor: #c61600;
 $feedbackCancelFontColor: #333;
 
 // Popover colors
-$popoverBg: initial;
-$popoverFontColor: #ffffff !important;
+$popoverBg: #fff;
+$popoverFontColor: #000 !important;
 $popupMenuColor: #ffffff !important;
 $popupMenuHoverColor: #ffffff !important;
-$popupMenuHoverBackground: rgba(255, 255, 255, 0.1);
+$popupMenuHoverBackground:#fff;
 $popupSliderColor: #0376da;
 
 // Toolbar

@@ -103,7 +103,7 @@
 }
 
 .chat-header {
-    background-color: $chatHeaderBackgroundColor;
+    background-image: $chatHeaderBackgroundColor;
     height: 70px;
     position: relative;
     width: 100%;
@@ -152,7 +152,7 @@
     border: 0px none;
     border-radius:0;
     box-shadow: none;
-    color: white;
+    color: #000;
     font-size: 15px;
     padding: 10px;
     overflow-y: auto;
