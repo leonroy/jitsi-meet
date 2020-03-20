@@ -188,6 +188,18 @@ form {
     background-position: center right;
 }
 
+.videocontainer {
+    .leftwatermark {
+        position:absolute;
+        top:30px;
+        left:30px;
+        background-image:url('/images/jitsilogo.svg');
+        width: 130px;
+        height: 45px;
+        background-position: center left;
+    }
+}
+
 .poweredby {
     position: absolute;
     left: 25;
