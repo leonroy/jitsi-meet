@@ -60,7 +60,7 @@ $dialogErrorText: #344563;
 $inlayColorBg: lighten($defaultBackground, 20%);
 $inlayBorderColor: lighten($baseLight, 10%);
 $inlayIconBg: #000;
-$inlayIconColor: #fff;
+$inlayIconColor: #a7a7a7;
 $inlayFilmstripOnlyColor: #474747;
 $inlayFilmstripOnlyBg: #fff;
 
@@ -81,11 +81,11 @@ $feedbackCancelFontColor: #333;
 
 // Popover colors
 $popoverBg: #fff;
-$popoverFontColor: #000 !important;
-$popupMenuColor: #ffffff !important;
-$popupMenuHoverColor: #ffffff !important;
-$popupMenuHoverBackground:#fff;
-$popupSliderColor: #0376da;
+$popoverFontColor: pink !important;
+$popupMenuColor: #000 !important;
+$popupMenuHoverColor: #000 !important;
+$popupMenuHoverBackground: darken($popoverBg, 5%);
+$popupSliderColor: #3572b0;
 
 // Toolbar
 $secondaryToolbarBg: rgba(0, 0, 0, 0.5);

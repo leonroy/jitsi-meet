@@ -88,7 +88,9 @@
         min-width: 20px;
         height: 100%;
         padding-right: 10px;
-
+        svg {
+            fill: #5b5e6d;
+        }
         > * {
             @include absoluteAligning();
         }
