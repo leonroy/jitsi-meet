@@ -52,6 +52,7 @@ class KickButton extends AbstractKickButton {
         return (
             <RemoteVideoMenuButton
                 buttonText = { t('videothumbnail.kick') }
+                color = '#000'
                 displayClass = 'kicklink'
                 icon = { IconKick }
                 id = { `ejectlink_${participantID}` }

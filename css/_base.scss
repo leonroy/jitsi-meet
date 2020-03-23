@@ -3,6 +3,65 @@
  * none is applied. Other browsers already support selecting within inputs while
  * user-select is none. As such, disallow user-select except on inputs.
  */
+
+ // Fonts
+
+$font-path: "/fonts/" !default;
+
+/*
+        This font software is the property of Commercial Type.
+
+        You may not modify the font software, use it on another website, or install it on a computer.
+
+        License information is available at http://commercialtype.com/eula
+        For more information please visit Commercial Type at http://commercialtype.com or email us at info[at]commercialtype.com
+
+        Copyright (C) 2018 Schwartzco Inc.
+        License: 1801-BMOADZ
+*/
+
+@font-face {
+    font-family: 'Graphik Web';
+    font-display: swap;
+    src: url("#{$font-path}Graphik-Regular-Web.eot");
+    src: url("#{$font-path}Graphik-Regular-Web.eot?#iefix") format("embedded-opentype"), url("#{$font-path}Graphik-Regular-Web.woff2") format("woff2"), url("#{$font-path}Graphik-Regular-Web.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+
+}
+
+@font-face {
+    font-family: 'Graphik Web';
+    font-display: swap;
+    src: url("#{$font-path}Graphik-Semibold-Web.eot");
+    src: url("#{$font-path}Graphik-Semibold-Web.eot?#iefix") format("embedded-opentype"), url("#{$font-path}Graphik-Semibold-Web.woff2") format("woff2"), url("#{$font-path}Graphik-Semibold-Web.woff") format("woff");
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+
+}
+
+@font-face {
+    font-family: 'Graphik Web';
+    font-display: swap;
+    src: url("#{$font-path}Graphik-Bold-Web.eot");
+    src: url("#{$font-path}Graphik-Bold-Web.eot?#iefix") format("embedded-opentype"), url("#{$font-path}Graphik-Bold-Web.woff2") format("woff2"), url("#{$font-path}Graphik-Bold-Web.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+
+}
+
+@font-face {
+    font-family: 'Graphik Web';
+    font-display: swap;
+    src: url("#{$font-path}Graphik-Medium-Web.eot");
+    src: url("#{$font-path}Graphik-Medium-Web.eot?#iefix") format("embedded-opentype"), url("#{$font-path}Graphik-Medium-Web.woff2") format("woff2"), url("#{$font-path}Graphik-Medium-Web.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+}
 * {
     -webkit-user-select: none;
     user-select: none;
@@ -20,6 +79,7 @@ html {
 }
 
 body {
+    font-family: "Graphik Web", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
     margin: 0px;
     width: 100%;
     height: 100%;
@@ -57,7 +117,8 @@ p {
 }
 
 body, input, textarea, keygen, select, button {
-    font-family: $baseFontFamily !important;
+    font-family: "Graphik Web", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+;
 }
 
 #nowebrtc {
@@ -103,7 +164,6 @@ form {
 
 .watermark {
     display: block;
-    position: absolute;
     top: 15;
     width: $watermarkWidth;
     height: $watermarkHeight;
@@ -112,17 +172,32 @@ form {
     z-index: $zindex2;
 }
 
+.watermark-main-cont {
+
+}
+
 .leftwatermark {
-    left: 32px;
-    top: 32px;
+    height: 30px;
     background-image: url($defaultWatermarkLink);
-    background-position: center left;
+    background-position: center center;
 }
 
 .rightwatermark {
     right: 32px;
     top: 32px;
     background-position: center right;
+}
+
+.videocontainer {
+    .leftwatermark {
+        position:absolute;
+        top:30px;
+        left:30px;
+        background-image:url('/images/jitsilogo.svg');
+        width: 130px;
+        height: 45px;
+        background-position: center left;
+    }
 }
 
 .poweredby {

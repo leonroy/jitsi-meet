@@ -10,7 +10,7 @@ export const ColorPalette = {
     /**
      * The application's background color.
      */
-    appBackground: BLACK,
+    appBackground: '#FFFFFF',
 
     /**
      * The application's definition of the default color black. Generally,
